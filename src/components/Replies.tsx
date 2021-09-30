@@ -19,6 +19,7 @@ const Replies = ({username, userImagePath, commentText, likeNum, replies}:Commen
             <div className="bg-gray-200 rounded-lg p-2">
                 <p className="font-semibold">{username}</p>
                 <p>{commentText}</p>
+                {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
                 {checkLike(likeNum)}
             </div>
         </div>

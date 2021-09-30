@@ -18,6 +18,7 @@ function App() {
         <div className="">
 
           {/* normal comment */}
+          {/*นำข้อมูลจาก comments.ts มา map โดยส่งแต่ละข้อมูลให้ Comments component */}
           {comments.map(comment => {
             return (
               <Comments
@@ -25,14 +26,11 @@ function App() {
                 userImagePath={comment.userImagePath}
                 commentText={comment.commentText}
                 likeNum={comment.likeNum}
+                /* replies : ส่ง array ของ replies เข้าไป */
                 replies={comment.replies}
               />
             )
           })}
-
-          {/* replies */}
-          
-
         </div>
 
       </div>
